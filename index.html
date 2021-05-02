@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Material Desing-->    
+    <link rel="stylesheet" href="./material.min.css">
+    <script src="./material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--seo-->
+  <meta name="keywords" content="Estampados, Pañuelos, patterns, diseños, Print, Design, Scarf">
+<!--title --> 
+  <title>Millie - Pattern Design Textile</title> 
+  <meta name="description" content=" Marca de pañuelos, con diseños únicos, divertidos y originales, para complementar nuestros outfits">
+    <link rel="stylesheet" href="./sass/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head> 
+
+
+<body>
+    <!--Menu--> 
+ <header>  
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f2d753 ">
+   <!-- contenedor del navbar-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"
+            ><img class="main-header__logo" src="./imagenes/1.gif" alt="logo de la marca"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">News</a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./views/Prints.html">Estampados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/Scarf.html">Pañuelos</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="./views/FAQS.html">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="./views/Contact.html">Contacto</a>
+              </li>
+         </ul>      
+               <form class="d-flex">
+                    <div class="box">
+                        <div class="container-1">
+                            <div class="form-group has-feedback">
+                                <i class="fa fa-search form-control-feedback"></i>
+                                <input type="text" class="form-control" placeholder="Busqueda Avanzada">
+                            </div>
+                        </div>
+                      </div>  
+                    <button class="btn btn-outline-warning" type="submit">Buscar</button>      
+                </form>
+            </div>
+        </div> <!--fin del contenedor navbar-->
+        
+      </nav>
+</header>
+<!-- barra de promociones-->
+<section class="container-promo">
+    <div class="alert alert-light" role="alert" style="color: white; background-color: #f5d4d1;">
+        A TODO EL PAÍS GRATIS CON TU COMPRA SUPERIOR A $3.000 
+    </div>
+</section>
+
+<!--carousel de imagenes-->
+
+<div class="container-2">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!--Slider 1 -->
+          <div class="carousel-item active text-center">
+            <img src="./imagenes/SLIDE-1.JPG" class="d-block w-100" alt=" Carousel con imagenes de Pañuelos">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class= "carousel-titulos">PAÑUELOS</h1>
+                <p class="carousel-titulos__sub">Variedad de modelos, colores, tamaños y texturas.</p>
+                <p><a class="btn btn-lg" style="background-color: #f28d69" href="./views/Scarf.html">Comprar</a></p>
+            </div>
+          </div>
+          <!--Slider 2 -->
+          <div class="carousel-item text-center">
+            <img src="./imagenes/SLIDE 2.png" class="d-block w-100" alt="Carousel con imagenes de Estampados">
+            <div class="carousel-caption d-none d-md-block">
+                    <h1 class="carousel-titulos">ESTAMPADOS</h1>
+                    <p class="carousel-titulos__sub">Enamorate de nuestros dibujos y colores</p>
+                    <p><a id="btn-comprar" class="btn btn-lg" style="background-color: #f28d69" href="./views/Prints.html">Comprar</a></p>
+                </div>
+          </div>
+          <!--Slider 3 -->
+          <div class="carousel-item text-center">
+            <img src="./imagenes/SLIDE-3.JPG" class="d-block w-100" alt="Carousel con las novedades">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="carousel-titulos">NOVEDADES</h1>
+              <p class="carousel-titulos__sub">No te pierdas lo nuevo de la semana</p>
+              <p><a class="btn btn-lg" style="background-color: #f28d69" href="./index.html">Ver más</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+
+<!-- barra de promociones-->
+<section class="container-nombre">
+    <div class="alert alert-light" role="alert" style="color: white; background-color: #f2d753;"> 
+        <h4 class="container-nombre__title">NUEVOS INGRESOS</h4>
+    </div>
+</section>
+<!-- productos -->
+<section class="container-productos">
+    <div class="album py-5 bg-light">
+    <div class="container">
+  
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+                <img class="fotos" id="modelo1" src= "./imagenes/modelo1.jpg"  alt="Modelo Pañuelo Jazmín "/>
+                <div class="card-body">
+                <h4 class="card-titulo"> Pañuelo Jazmín</h4>
+                <p class="card-text">Pañuelo tradicional de 90 x 90 cm. <br> Print botánicos estampado en Creep. </p>
+                <div class="product_button">
+                    <p><a class="button btn-lg" href="./views/Scarf.html">Comprar</a></p>
+                </div> 
+                </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="fotos" src= "./imagenes/modelo2.jpg"  alt="Modelo Pañuelo Colibri"/>
+          <div class="card-body">
+            <h4 class="card-titulo"> Pañuelo Colibrí</h4>
+            <p class="card-text">Pañuelo de 45 x 45 cm. <br>
+                Print ilustración estampado en seda.</p>
+            <div class="product_button">
+                <p><a class="button btn-lg" href="./views/Scarf.html">Comprar</a></p>            
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="fotos" src= "./imagenes/modelo4.jpg"  alt="Modelo Pañuelo Orquidia"/>
+          <div class="card-body">
+            <h4 class="card-titulo"> Pañuelo Orquidia</h4>
+            <p class="card-text">Pañuelo de 45 x 45 cm. <br>
+                Print botánico estampado en seda. </p>
+            <div class="product_button">
+                <p><a class="button btn-lg" href="./views/Scarf.html">Comprar</a></p>            
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="fotos" src= "./imagenes/estampa10.jpeg"  alt="Modelo Pañuelo Rapsodia"/>
+          <div class="card-body">
+            <h4 class="card-titulo"> Pañuelo Rapsodia</h4>
+            <p class="card-text">Pañuelo de 140 x 140 cm. <br>
+                Print étnico estampado en tejido de organza. </p>
+            <div class="product_button">
+                <p><a class="button btn-lg" href="./views/Scarf.html">Comprar</a></p>            
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="fotos" id="felipa" src= "./imagenes/cara.jpeg"  alt="Modelo Pañuelo Felipa"/>
+          <div class="card-body">
+            <h4 class="card-titulo"> Pañuelo Felipa</h4>
+            <p class="card-text">Pañuelo de 70 x 70 cm. <br> Print botánico estampado en seda. </p>
+            <div class="product_button">
+                <p><a class="button btn-lg" href="./views/Scarf.html">Comprar</a></p>            
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="fotos" src= "./imagenes/estampa8.jpeg"  alt="Modelo Pañuelo Rayitas"/>
+          <div class="card-body">
+            <h4 class="card-titulo"> Pañuelo Rayitas</h4>
+            <p class="card-text">Pañuelo de 140 x 140 cm. <br> Print a rayas multicolor estampado en lino. </p>
+            <div class="product_button">
+                <p><a class="button btn-lg" href="./views/Scarf.html">Comprar</a></p>
+            </div> 
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+ 
+</section>
+
+<!-- footer -->
+<footer class="container-footer">
+<div class="footer-content">
+    <h3>Contacto</h3>
+    <p>
+        <div class="contacto">
+            <p id="nombre" class="contacto"> Millie Bsas</p>
+            <p class="contacto"> Av. Cordoba 3200 - Caba</p>
+            <p class="contacto"> info@millie.com.ar</p>
+            <p class="contacto">11-5555-4444</p>
+        </div>
+    </p>
+    <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-google"></i></a></li>
+    </ul>
+    <div class="newsletter-box">
+    <h3 id="newsletter" class="box"> Newsletter</h3>
+                    <input class="box" type="text" name="Nombre" placeholder="nombre"/><br>
+                    <input class="box" type="email" name="Email" placeholder="info@millie.com.ar"/> <br>	
+                    <input class="box" type="submit" value="Enviar"/> 
+                    <input class="box" type="reset" value="Limpiar"/> 
+                    <input class="box" type="button" value="Sin cambios"/> 
+    </div>
+</div>
+<div class="footer-bottom">
+    <p>copyright &copy;2020 codeOpacity. designer by <span> pampa </span></p>
+</div>
+
+
+</footer>
+
+</body>
+<!--scrips-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</html>
